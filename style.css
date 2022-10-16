@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #6E6965;
+    --color2: #DFB58A;
+    --color3: #D9D0C7;
+    --color4: #594837;
+    --color5: #A69F98;
+    --color6: #fff;
+    --color7: rgb(156,156,156);
+    --color8: #ccc;
+}
+
+body {
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    background-color: var(--color5);
+    background-image: url(/img/paisagem_noite.jpg);
+    background-repeat: no-repeat;
+    background-position: left left;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #49255C;
+    font-size: 0.9em;
+    height: 60px;
+    
+}
+
+#menu-hamburger {
+    display: flex;
+    margin-left: 20px;  
+    justify-content: center; 
+}
+
+#burger {
+    font-size: 20px;
+    color: var(--color6);
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    margin-left: 15px;    
+}
+
+#menu a {
+    color: var(--color6);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#menu a:nth-child(4), #menu a:nth-child(3) {
+    background-color: #CB9EE1;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background-color: var(--color8);
+    border-radius: 5px;
+}
+
+
+.buscar {
+    display: flex;
+    margin-right: 20px;
+}
+
+.buscar input {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.buscar i {
+    margin-right: 15px;
+    color: var(--color6);
+    font-size: 20px;
+}
+
+.buscar i:hover {
+    cursor: pointer;
+}
+
+.buscar p {
+    font-size: 17px;
+    color: var(--color6);
+    background-color: var(--color7);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+}
+
+.raias {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color8);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.config-raias {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px 0 10px;
+}
+
+.config-raias h5 {
+    font-size: 16px;
+}
+
+.config-raias a {
+    padding: 0px 5px;
+}
+
+.config-raias a:hover {
+    background-color: rgba(255, 255, 255, 0.441);
+    border-radius: 5px;
+}
+
+.config-raias i {
+    color: #000;
+}
+
+.card {
+    background-color: #CB9EE1;
+    width: 280px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+
+.content-card .card div {
+    margin: 5px;
+}
+
+.add-card {
+    margin: 5px;
+}
+
+.add-card  a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: #000;
+    padding: 2px;
+}
+
+.add-card a:hover {
+    background-color: rgba(255, 255, 255, 0.441);
+    border-radius: 10px;
+}
+
+.modal-container {
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    top: 30%;
+    justify-content: center;
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.modal-container h2 {
+    color: var(--color6)
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #49255C;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.modal input {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+.modal input[placeholder="Descrição"] {
+    height: 50px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 5px;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border: none;
+    background-color: #CB9EE1;
+    border-radius: 5px;
+    color: var(--color6);
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: var(--color8);
+}
+
+.data label {
+    color: var(--color6);
+}
+
+.add-raia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color8);
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.add-raia a {
+    text-decoration: none;
+    color: #000;
+}
+
+.add-raia:hover {
+    background-color: rgba(255, 255, 255, 0.441);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1220px){
+    main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1027px){
+    header {
+        flex-direction: column;
+        justify-content: center;
+        height: 220px;
+    }
+
+    #menu-hamburger i, .buscar {
+        display: none;
+    }
+
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu a {
+        margin-top: 10px;
+    }
+
+    main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 560px){
+    main {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+   
+}

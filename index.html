@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>LTarefas</title>
+</head>
+<body>
+    <header>
+        <div id="menu-hamburger">
+            <nav id="menu">
+                <a href="#">Área de Trabalho</a>
+                <a href="#">Recente</a>
+                <a href="">Criar uma Raia</a>
+                <a href="#" onclick="openModal()">Criar um cartão</a>
+            </nav>
+        </div>
+        
+
+        <div class="buscar">
+            <div class="buscador">
+                <input type="text" size="30" placeholder="Pesquisar">
+                <i class="fa-solid fa-circle-info"></i>
+                <i class="fa-regular fa-bell"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="raias">
+            <div class="config-raias">
+                <h5>Backlog</h5>
+                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+           
+            <div class="content-card">
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+            </div>
+            <div class="add-card">
+                <a href="#" onclick="openModal()">+ Adicionar um cartão</a>
+            </div>
+        </div>
+
+        <div class="raias">
+            <div class="config-raias">
+                <h5>Fazendo</h5>
+                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+           
+            <div class="content-card">
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+            </div>
+            <div class="add-card">
+                <a href="#" onclick="openModal()">+ Adicionar um cartão</a>
+            </div>
+        </div>
+
+        <div class="raias">
+            <div class="config-raias">
+                <h5>Concluído</h5>
+                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+           
+            <div class="content-card">
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+                <div class="card">
+                    <div class="titulo">Teste</div>
+                    <div class="conteudo">teste da div</div>
+                    <div class="tempo">31/10/2022</div>
+                </div>
+            </div>
+            <div class="add-card">
+                <a href="#" onclick="openModal()">+ Adicionar um cartão</a>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="modal-container">
+        <div class="modal">
+            <h2>Novo Cartão</h2>
+            <input type="text" placeholder="Título" id="modal-titulo">
+            <input type="text" placeholder="Descrição" id="modal-descricao">
+            <div class="data">
+                <label for="">Data de Entrega:</label>
+                <input type= "date" id="modal-data">
+            </div>
+            <div class="buttons">
+                <button onclick="closeModal()">Cancelar</button>
+                <button onclick="criarCard()">Criar</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/2466f2fe71.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
